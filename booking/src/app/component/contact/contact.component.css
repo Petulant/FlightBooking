@@ -1,0 +1,22 @@
+table{
+    /* width: 50%; */
+     border:30;
+     border-radius:20px;
+     height: 50%;
+     background-color: burlywood;
+     padding: 100px;
+     margin:auto;
+     
+   
+
+}
+table,td,P{
+    padding-top:0px; 
+}
+#box{
+    height: 100px;
+}
+/* textarea[text="subject"],subject{
+    height: 200px;
+    margin-right: 80px;
+} */

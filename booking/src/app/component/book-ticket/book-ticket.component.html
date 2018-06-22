@@ -1,0 +1,67 @@
+
+<div class="nav">
+    <i><h1>Make Booking</h1></i>
+    <ul>
+        <li><a routerLink="/Home">Home</a></li>
+        <li><a routerLink="#">Booking</a></li>
+        <li><a routerLink="/aboutus">AboutUs</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+                 
+    </ul>
+</div>
+
+
+<body >
+
+    <form>
+    <label>Title</label><br>
+    <select name = "title" [(ngModel)] = "title" [ngModelOptions]="{standalone: true}" >
+    <option value=""></option>
+    <option value="Mr">Mr</option>
+    <option value="Mrs">Mrs</option>
+    <option value="Ms">Ms</option>
+    </select><br>
+    First Name<br>
+    <input type="text"  name="name" placeholder="Type your name.." [(ngModel)]="firstname">
+    <br>
+    Surname<br>
+    <input type="text" name="surname" placeholder="Type your Surname.."[(ngModel)]="surname">
+    <br><br>
+  
+    <label>From</label><br>
+    <select name = "Fromplace" [(ngModel)] = "Fromplace" [ngModelOptions]="{standalone: true}" >
+        <option value=""></option>
+        <option value="PTA">Pretoria</option>
+        <option value="Johannesburg">Johannesburg</option>
+        <option value="CT">CapeTown</option>
+        <option value="PE">Port Elizabeth</option>
+        <option value="KZN">Durban</option>
+    </select>
+
+    <br>To<br>
+    <select name = "Toplace" [(ngModel)] = "Toplace" [ngModelOptions]="{standalone: true}" >
+        <option value=""></option>
+        <option value="PTA">Pretoria</option>
+        <option value="Johannesburg">Johannesburg</option>
+        <option value="CT">CapeTown</option>
+        <option value="PE">Port Elizabeth</option>
+        <option value="KZN">Durban</option>
+    </select>
+
+   
+    
+    <br><br>
+    Departure Date<br>
+    <input type="date"  [(ngModel)]="dateFrom" name="dateFrom">
+    <br><br>
+    Return Date<br>
+    <input type="date" [(ngModel)]="dateTo" name="dateTo">
+    <br><br>
+    <button type="button" (click)="onbooking()" value="Submit">Submit</button>
+</form>
+
+
+</body>
+
+
+<router-outlet></router-outlet>
